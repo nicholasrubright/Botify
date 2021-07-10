@@ -2,11 +2,21 @@ const Botify = require('./lib/Botify');
 
 let botify = new Botify('API_KEY');
 
-// botify.Search.gettingByKeyword("tania bowra", "artist")
-//     .then(res => console.log(res.data))
-//     .catch(err => console.error(err));
 
 
-botify.Search.gettingArtistByKeyword("bbno$")
-    .then(response => console.log(response))
-    .catch(err => console.error("error: " + err));
+botify.Search.gettingTrackByKeyword("Best Thing")
+    .then(track_info => {
+        const id = track_info.tracks.items[0].id
+        
+        botify.Tracks.gettingTrackById(id)
+            .then(data => {
+                console.log(data);
+            })
+
+    });
+
+//let test = botify.Search.gettingTrackByKeyword("Best Thing");
+
+//let test = botify.Tracks.gettingTrackById("peepee1");
+
+//console.log(test);
