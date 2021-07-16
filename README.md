@@ -3,7 +3,10 @@ A very simple Spotify API wrapper I created as a way to practice Object-oriented
 
 I plan to make this available to download in npm once I add more endpoints.
 
-## Library Structure
+# Key Features
+- Lightweight wrapper
+
+# Library Structure
 
 ### Naming Conventions
 The endpoints and their methods are named in alignment to the API documentation
@@ -13,3 +16,10 @@ The endpoints and their methods are named in alignment to the API documentation
 Botify.Tracks
 Botify.Search
 ```
+
+# Installing
+
+# Example
+
+# Links
+- [Spotify API](https://developer.spotify.com/)
